@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <!--fontes-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600&family=Poppins&display=swap" rel="stylesheet">
+               <!--fimfontes-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>PEI 1</title>
+</head>
+
+    <style>
+        /*estilo geral */
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', sans-serif;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body{
+            background-image:linear-gradient(to right, #095329, #34a162);
+            height: 100vh;
+        }
+
+        .interface {
+            max-width: 1280px;
+            margin:0 auto;
+        }
+        .flex{
+            display: flex; /* deixa img e txt alinhados*/
+    
+        }
+        /*estilo do cabecalho */
+        header{
+            padding: 40px 4%;
+        }
+        header> .interface {
+            display: flex;
+            align-items: center;
+             /*distancia */
+            
+        }
+        header a{ 
+            color:#00BFA6;  /*cor */
+            text-decoration: none; /*tirar a linha de link */
+        }
+        header nav ul{ /*tirar os pontos */
+            list-style-type: none;    
+        }
+        header nav ul li{  /*deixar lado a lado os links*/
+            display: inline-block;
+            padding:0 30px; 
+        }
+
+    /*ESTIILO TOPO DO SITE  */
+      section.topo-do-site{
+            padding: 40px 4%;
+            
+        }
+        section.topo-do-site .flex{
+            align-items: center;                   /*alinhar texto img*/
+            justify-content: center;             /*alinhar texto img*/
+            gap: 90px;                          /*distancia dos px*/
+        }
+
+        .topo-do-site h1{
+            color: #ffffff;                   /* cor do h1*/
+            font-size: 42px;                    /*tamanho do h1*/
+            line-height: 40px;                  /*distanciado h1 p/ p*/
+        }
+        .topo-do-site .txt-topo-site h1 span{    /*ponto ?*/
+            color: #00BFA6;  
+        }
+        .topo-do-site .txt-topo-site p{         /*paragrafo*/
+            color: #000000;
+            margin: 40px 0;
+            
+        }
+        /*animacao da img2*/
+        .topo-do-site .img-topo-site img{  
+            position: relative;
+            animation: flutuar 2s ease-in-out infinite alternate;
+        }
+        
+        @keyframes flutuar{
+            0%{
+                top: 0;
+            }
+            100%{
+                top: 30px;
+            }
+        }
+        /*animacao da img2*/
+
+        .box{
+            color: rgb(0, 0, 0);
+            position: absolute;
+            top: 80%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            background-color: rgba(253, 253, 253, 0.6);
+            padding: 15px;
+            border-radius: 15px;
+            width: 68%;
+        }
+        
+
+
+    </style>
+
+
+<body>
+    
+    <header>
+        
+       <div class="interface">
+         <div class="logo">
+            
+    <a href="#">
+            <img src="img/undraw_nature_benefits.svg" height="125" width="125" alt="Logo PEI1"> </a>
+        </div><!--logo-->
+    
+       <nav class="menu-desktop"> <!---menu-->
+            <ul>
+               <li> <a href="#">Inicio</a></li>
+                <!--<li> <a href="#">Projeto</a></li> linksdomenu-->              
+            </ul>
+       </nav>
+        </div><!-- div para limitar os espaço/interface-->
+
+    </header>
+    <main>  
+        <!-- -->   <section class="topo-do-site">
+               <div class="interface">
+                   <div class="flex">
+                       <div class="txt-topo-site">
+                           <h1> OQUE E BIOCOMBUSTIVEL<span>?</span></h1>
+                       <p>Biocombustíveis são uma classe de combustíveis renováveis produzidos a 
+       partir de materiais orgânicos, como plantas, algas e resíduos orgânicos. Eles desempenham um papel fundamental na busca por fontes de energia mais limpas e sustentáveis, reduzindo a dependência dos combustíveis fósseis e mitigando os impactos negativos das emissões de gases de efeito estufa.</p>
+                       </div><!--txt-topo-site-->
+   
+                       <div class="img-topo-site">
+                           <img src="img/BIOCOMBUSTIVEL.jpg" height="300" width="300" alt="" class="IMG_Bio">
+   
+                       </div><!--img-topo-site-->
+                   </div><!--flex-->
+               </div><!--interface-->
+           </section><!--topo-do-site-->
+       </main>
+    
+
+        <div class="container">
+        <div class="box">
+            <h1>Consumo consiente</h1>
+            <p>    </p>
+                
+        </div> <!--box-->
+
+        
+        </div> <!--coiteiner-->
+
+
+
+        
+     <!--box-->
+        
+    
+</body>
+</html>
